@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>FanDongle</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Welcome to FanDongle!</title>
     </head>
     <body>
         <div class="container">
-            <h1>Welcome to FanDongle!</h1>
+            <h2>Add a theatre</h2>
             <div class="row">
                 <div class="col-md-6">
                     <form id="theatre">
@@ -20,23 +24,26 @@
 
                         <!-- Movies -->
                         <!-- #new-movies is a unique div that will contain all of the .new-movie classes -->
-                        <div id="new-movies">
-                            <div class="new-movie">
-                                <div class="form-group">
-                                    <label for="new-movie-name">Movie Name</label>
-                                    <input type="text" class="form-control new-movie-name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="new-movie-director">Movie Director</label>
-                                    <input type="text" class="form-control new-movie-director">
-                                </div>
-                                <div class="form-group">
-                                    <label for="new-movie-genre">Movie Genre</label>
-                                    <input type="text" class="form-control new-movie-genre">
-                                </div>
-                                <div class="form-group">
-                                    <label for="new-movie-runtime">Movie Runtime</label>
-                                    <input type="text" class="form-control new-movie-runtime">
+                        <div class="well">
+                            <h3>Add a movie</h3>
+                            <div id="new-movies">
+                                <div class="new-movie">
+                                    <div class="form-group">
+                                        <label for="new-movie-name">Movie Name</label>
+                                        <input type="text" class="form-control new-movie-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-movie-director">Movie Director</label>
+                                        <input type="text" class="form-control new-movie-director">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-movie-genre">Movie Genre</label>
+                                        <input type="text" class="form-control new-movie-genre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-movie-runtime">Movie Runtime</label>
+                                        <input type="text" class="form-control new-movie-runtime">
+                                    </div>
                                 </div>
                             </div>
                         </div>
