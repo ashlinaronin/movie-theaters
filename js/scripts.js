@@ -27,8 +27,8 @@ $(document).ready(function() {
     $("form#new-theater").submit(function(event) {
         event.preventDefault();
 
-        var inputtedName = $('input#new-name');
-        var inputtedLocation = $('input#new-location');
+        var inputtedName = $('input#new-name').val();
+        var inputtedLocation = $('input#new-location').val();
 
         // Create a new theater object with input from theater form, no movies yet
         var newTheater = {
@@ -36,6 +36,8 @@ $(document).ready(function() {
             location: inputtedLocation,
             movies: []
         };
+
+        console.log("Just made newTheater it is " + newTheater);
 
         // Get the input data for any movies that have been added along with
         // this theater.
