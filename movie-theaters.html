@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>FanDongle</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to FanDongle!</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="theatre">
+                        <div class="form-group">
+                            <label for="new-name">Name</label>
+                            <input type="text" id="new-name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="new-location">Location</label>
+                            <input type="text" id="new-location" class="form-control">
+                        </div>
+
+                        <!-- Movies -->
+                        <!-- #new-movies is a unique div that will contain all of the .new-movie classes -->
+                        <div id="new-movies">
+                            <div class="new-movie">
+                                <div class="form-group">
+                                    <label for="new-movie-name">Movie Name</label>
+                                    <input type="text" class="form-control new-movie-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-movie-director">Movie Director</label>
+                                    <input type="text" class="form-control new-movie-director">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-movie-genre">Movie Genre</label>
+                                    <input type="text" class="form-control new-movie-genre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-movie-runtime">Movie Runtime</label>
+                                    <input type="text" class="form-control new-movie-runtime">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end movies -->
+
+                        <span class="btn btn-primary" id="new-movie">Another movie</span>
+                        <button type="submit" class="btn btn-success">Add</button>
+                    </form>
+
+                    <h2>Movies:</h2>
+                    <ul id="movies"></ul>
+                </div>
+
+                <!-- show existing theaters/movies here -->
+                <div class="col-md-6">
+                    <div id="show-theater">
+                        <h2 class="name"></h2>
+
+                        <p>Location: <span class="location"></span></p>
+                        <p>Movies:</p>
+
+                        <!-- print out movies for this theater here -->
+                        <ul id="movie"></ul>
+                </div>
+                <!-- end show existing theaters/movies -->
+
+            </div>
+        </div>
+    </body>
+</html>

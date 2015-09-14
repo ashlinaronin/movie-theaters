@@ -1,0 +1,16 @@
+#show-theater {
+    display: none;
+}
+
+.theater {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.theater:hover {
+    text-decoration: underline;
+}
+
+#new-movies {
+    background-color:green;
+}
